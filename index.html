@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/css/stylesheet.css">
+    <title>Reloj</title>
+</head>
+
+<body>
+
+    <audio id="alarma" src="Assets/audio/alarma.mp3"></audio>
+
+    <div id="wrapper">
+        <div class="despertador">
+            <div id="buttons">
+                <button id="stopAudio" onclick="stopAudio()" >Stop Audio</button>
+            </div>
+            <div class="digits">
+                <div class="bigDigits" id="hora"></div>
+                <div class="bigDigits dots on">:</div>
+                <div class="bigDigits" id="minuto"></div>
+                <div class="smallDigits" id="ampm">
+                    <div id="am">AM</div>
+                    <div id="pm">PM</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table id="table-id" class="table negativo">
+        <tbody>
+        </tbody>
+      </table>
+
+    <div id="alarmBox">
+        <input type="time" name="" id="timeBox">
+        <button class="button buttonGreen" id="setAlarm"><i class="fas fa-check"></i></button>
+    </div>
+
+    <button class="button buttonGreen" id="newAlarm" onclick="setAlarm()"><i class="far fa-bell"></i></button>
+
+    <script src="Assets/js/app.js"></script>
+    <script src="https://kit.fontawesome.com/a4073c62d1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

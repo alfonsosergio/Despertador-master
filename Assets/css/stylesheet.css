@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'DSDIGI';
+    src: url('../fonts/DSDIGI.eot');
+    src: local('DSDIGI'), url('../fonts/DSDIGI.woff') format('woff'), url('../fonts/DSDIGI.ttf') format('truetype');
+}
+
+.fontsforweb_fontid_1091 {
+    font-family: 'DSDIGI' !important;
+}
+
+
+/*font-family: 'DSDIGI';*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+#wrapper {
+    background-color: indigo;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.digits {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DSDIGI';
+    font-size: 15rem;
+    color: springgreen;
+    text-shadow: 0px 0px 30px springgreen;
+}
+
+#ampm {
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
+}
+
+.on {
+    color: springgreen;
+    text-shadow: 0px 0px 30px springgreen;
+}
+
+.off {
+    color: rgb(0, 59, 30);
+}
+
+.button {
+    border-radius: 50%;
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+}
+
+.buttonGreen {
+    color: springgreen;
+    border: springgreen 2px solid;
+    background-color: transparent;
+}
+
+.buttonGreen :hover {
+    background-color: springgreen;
+    color: white;
+}
+
+#newAlarm {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 999;
+}
+
+#alarmBox {
+    position: fixed;
+    bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#alarmBox input {
+    font-size: 3rem;
+    background-color: rgb(50, 0, 85);
+    color: white;
+    border: transparent;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+.table {
+    position: fixed;
+    width: 11%;
+    bottom: 75%;
+    margin-left: 84%;
+
+    font-size: 3rem;
+    background-color: rgb(50, 0, 85);
+    color: white;
+    font-family: 'DSDIGI';
+    border: transparent;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+.negativo {
+    display: none;
+}
+
+.positivo {
+    display: block;
+}
+
